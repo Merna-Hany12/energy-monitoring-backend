@@ -1,6 +1,3 @@
-
-
-````markdown
 # Real-Time AI-Based Energy Monitoring System (Backend + AI Model)
 
 This repository contains the backend server and AI model for a real-time appliance monitoring system, built as part of my graduation project. The system uses a single current sensor and a ConvLSTM deep learning model to detect when appliances are plugged in or out, calculate energy usage, and communicate with a mobile app in real-time.
@@ -38,7 +35,7 @@ This repository contains the backend server and AI model for a real-time applian
 ```bash
 git clone https://github.com/Merna-Hany12/energy-monitoring-backend.git
 cd energy-monitoring-backend
-````
+
 
 ### 2. Install dependencies
 
