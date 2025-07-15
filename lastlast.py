@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-MONGODB_URI = "mongodb+srv://energyadmin:123mernamerna-@energy-cluster.global.mongocluster.cosmos.azure.com/energy?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000&authSource=admin"
+MONGODB_URI = "mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>"
 client = AsyncIOMotorClient(MONGODB_URI)  # CHANGED TO ASYNC CLIENT
 db = client["energy"]
 
