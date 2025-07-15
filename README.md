@@ -1,6 +1,4 @@
-Great! Here's your finalized `README.md` with your GitHub username included:
 
----
 
 ````markdown
 # Real-Time AI-Based Energy Monitoring System (Backend + AI Model)
