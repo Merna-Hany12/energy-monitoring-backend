@@ -1,0 +1,16 @@
+pickle-mixin==1.0.2
+websockets==10.4
+aiohttp==3.8.4  # Needed for asynchronous handling with WebSockets
+fastapi==0.95.1
+uvicorn==0.18.3
+pydantic==1.10.7
+scikit-learn==1.1.3
+pandas==1.5.3
+numpy==1.26.3
+keras==2.15.0
+tensorflow==2.15.0
+websockets==10.4
+aiohttp==3.8.4
+motor==3.3.2  # ADD THIS
+pymongo==4.5.0  # ADD THIS
+python-dotenv==0.21.0  # MAKE REQUIRED
