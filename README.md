@@ -73,32 +73,13 @@ Open your browser to:
 
 * Type: Convolutional Long Short-Term Memory (ConvLSTM)
 * Accuracy: **92.9%**
-* Input: Sequence of 5 current readings
+* Input: Sequence of 20 current readings
 * Output: Predicted appliance state (plugged in / unplugged)
 * Model Files:
 
   * `models/convlstm_model.h5`
   * `models/scaler.pkl`
   * `models/label_encoder.pkl`
-
----
-
-## 📁 Project Structure
-
-```
-energy-monitoring-backend/
-├── main.py                 # FastAPI entry point
-├── db.py                   # MongoDB connection
-├── detect.py               # AI model prediction logic
-├── models/
-│   ├── convlstm_model.h5
-│   ├── scaler.pkl
-│   └── label_encoder.pkl
-├── utils.py                # Utility functions
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
 
 ---
 
