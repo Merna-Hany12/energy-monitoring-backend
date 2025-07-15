@@ -45,18 +45,18 @@ pip install -r requirements.txt
 
 ### 3. Configure the MongoDB connection
 
-In `main.py` or `db.py`, replace the placeholder with your actual connection string:
+In `lastlast.py`, replace the placeholder with your actual connection string:
 
 ```python
-DATABASE_URL = "mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>"
+MONGODB_URI = "mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>"
 ```
 
-> 🔐 **Important**: Never push your real credentials. You can also use a `config.py` or `.env` file for better security.
+
 
 ### 4. Run the server
 
 ```bash
-uvicorn main:app --reload
+uvicorn lastlast:app --reload
 ```
 
 Open your browser to:
