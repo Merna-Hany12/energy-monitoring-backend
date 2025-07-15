@@ -1,3 +1,8 @@
+Great! Here's your finalized `README.md` with your GitHub username included:
+
+---
+
+````markdown
 # Real-Time AI-Based Energy Monitoring System (Backend + AI Model)
 
 This repository contains the backend server and AI model for a real-time appliance monitoring system, built as part of my graduation project. The system uses a single current sensor and a ConvLSTM deep learning model to detect when appliances are plugged in or out, calculate energy usage, and communicate with a mobile app in real-time.
@@ -35,3 +40,77 @@ This repository contains the backend server and AI model for a real-time applian
 ```bash
 git clone https://github.com/Merna-Hany12/energy-monitoring-backend.git
 cd energy-monitoring-backend
+````
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure the MongoDB connection
+
+In `main.py` or `db.py`, replace the placeholder with your actual connection string:
+
+```python
+DATABASE_URL = "mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>"
+```
+
+> 🔐 **Important**: Never push your real credentials. You can also use a `config.py` or `.env` file for better security.
+
+### 4. Run the server
+
+```bash
+uvicorn main:app --reload
+```
+
+Open your browser to:
+👉 `http://localhost:8000/docs` for Swagger API documentation
+
+---
+
+## 🧠 AI Model Details
+
+* Type: Convolutional Long Short-Term Memory (ConvLSTM)
+* Accuracy: **92.9%**
+* Input: Sequence of 5 current readings
+* Output: Predicted appliance state (plugged in / unplugged)
+* Model Files:
+
+  * `models/convlstm_model.h5`
+  * `models/scaler.pkl`
+  * `models/label_encoder.pkl`
+
+---
+
+## 📁 Project Structure
+
+```
+energy-monitoring-backend/
+├── main.py                 # FastAPI entry point
+├── db.py                   # MongoDB connection
+├── detect.py               # AI model prediction logic
+├── models/
+│   ├── convlstm_model.h5
+│   ├── scaler.pkl
+│   └── label_encoder.pkl
+├── utils.py                # Utility functions
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+---
+
+## 📝 Notes
+
+* This project is part of an academic graduation project and is continuously improving.
+* The AI model was trained and tested offline; integration for live training is possible in future work.
+
+---
+
+
+## 🙋‍♀️ Author
+
+**Merna Hany**
+🔗 [GitHub](https://github.com/Merna-Hany12)
